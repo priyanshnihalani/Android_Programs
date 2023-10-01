@@ -1,0 +1,8 @@
+<animation-list android:id="@+id/mylist"
+    android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/traffic1" android:duration="2000"></item>
+    <item android:drawable="@drawable/traffic2" android:duration="2000"></item>
+    <item android:drawable="@drawable/traffic3" android:duration="2000"></item>
+
+</animation-list>

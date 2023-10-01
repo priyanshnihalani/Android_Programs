@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/calculator"
+        android:textSize="42sp"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:layout_margin = "20dp"
+        />
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Number "
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:autofillHints="10" />
+
+    <EditText
+        android:id="@+id/e2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Second Number "
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:autofillHints="10" />
+
+    <Button
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Calculate"
+        android:layout_margin="20dp"
+        />
+    <TextView
+        android:id="@+id/a1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Addition is: "
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/a2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Substraction is: "
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/a3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplication is: "
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/a4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Division is: "
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        />
+</LinearLayout>
