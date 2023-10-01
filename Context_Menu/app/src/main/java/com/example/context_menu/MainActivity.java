@@ -7,22 +7,20 @@ import android.view.ContextMenu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    ListView listView;
-    String contacts[]={"Ajay","Sachin","Sumit","Tarun","Yogesh"};
+    Button lv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        listView=(ListView)findViewById(R.id.lv);
-        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,contacts);
-        listView.setAdapter(adapter);
+        lv = findViewById(R.id.lv);
+
         // Register the ListView  for Context menu
-        registerForContextMenu(listView);
+        registerForContextMenu(lv);
+
     }
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo)
