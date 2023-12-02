@@ -5,7 +5,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class Sqlite extends SQLiteOpenHelper {
+public class SqliteDB extends SQLiteOpenHelper {
 
     private static final String Database_Name = "Student_Info";
     private static final int Database_Version = 1;
@@ -15,13 +15,13 @@ public class Sqlite extends SQLiteOpenHelper {
     private static final String City = "City";
     private static final String Contact = "Contact";
 
-    public Sqlite(Context context) {
+    public SqliteDB(Context context) {
         super(context, Database_Name, null, Database_Version);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE " + Table_Name + "(" + ID + "integer primary key autoincrement, "+ Name + "Text, " + City + "Text," + Contact + "Text" +")");
+        db.execSQL("CREATE TABLE IF NOT EXISTS " + Table_Name + "(" + ID + "integer primary key autoincrement, "+ Name + "Text, " + City + "Text," + Contact + "Text" +")");
     }
 
     @Override
