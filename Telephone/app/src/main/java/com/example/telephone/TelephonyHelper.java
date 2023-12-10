@@ -16,7 +16,8 @@ public class TelephonyHelper {
     {
         if(telephonyManager != null)
         {
-            return null /*telephonyManager.getLine1Number()*/;
+
+            return telephonyManager.getLine1Number();
         }
         else {
             return null;
